@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using CurrencyAggregationServiceLibrary.DataProviders;
+using CurrencyAggregationServiceLibrary.Extencion;
 using CurrencyAggregationServiceLibrary.Interfaces;
 using CurrencyAggregationServiceLibrary.Models;
 
@@ -24,10 +25,16 @@ namespace CurrencyAggregationServiceLibrary
 			var currenciesResult = new List<Currency>();
 			switch (mode.Code)
 			{
-				case 0: currenciesResult.AddRange(GetCurrenciesFromFiles().SelectMany(i=>i)); break;
-				case 1: currenciesResult.AddRange(GetCurrenciesFromFiles().SelectMany(i => i)); break;
+				case 0: currenciesResult.AddRange(GetCurrenciesFromFiles().SelectMany(i => i).AverageValue()); break;
+				case 1: currenciesResult.AddRange(GetCurrenciesFromFiles().Select(i => i.AverageValue()).SelectMany(i => i).AverageValue()); break;
+					
 			}
 			return currenciesResult;
+		}
+
+		private void AveragePrice()
+		{
+			
 		}
 
 		private List<List<Currency>> GetCurrenciesFromFiles()

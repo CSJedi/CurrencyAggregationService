@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="DataProviders\CsvDataProvider.cs" />
     <Compile Include="DataProviders\FileProvider.cs" />
+    <Compile Include="Extencion\Extencion.cs" />
     <Compile Include="Interfaces\ICurrencyAggregationService.cs" />
     <Compile Include="Interfaces\IDataProvider.cs" />
     <Compile Include="Models\Currency.cs" />
