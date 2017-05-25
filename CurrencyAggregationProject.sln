@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyAggregationProject", "CurrencyAggregationProject\CurrencyAggregationProject.csproj", "{218A8256-270D-4528-8D62-18ECD7E2DA15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyAggregationServiceLibrary", "CurrencyAggregationServiceLibrary\CurrencyAggregationServiceLibrary.csproj", "{D980FD90-5554-4562-A041-5685174380C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{218A8256-270D-4528-8D62-18ECD7E2DA15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{218A8256-270D-4528-8D62-18ECD7E2DA15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{218A8256-270D-4528-8D62-18ECD7E2DA15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{218A8256-270D-4528-8D62-18ECD7E2DA15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D980FD90-5554-4562-A041-5685174380C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D980FD90-5554-4562-A041-5685174380C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D980FD90-5554-4562-A041-5685174380C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D980FD90-5554-4562-A041-5685174380C7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
